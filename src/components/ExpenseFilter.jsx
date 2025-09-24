@@ -19,11 +19,15 @@ function ExpenseFilter({ categories, onFilterChange, currentCategory }) {
                 onChange={(e) => onFilterChange(e.target.value)}
                 className="w-full p-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-                <option value="">All Categories</option>
+                   <option value="">--Select Category--</option>
+                   <option value="Food">Food</option>
+                   <option value="Transport">Transport</option>
+                   <option value="Utilities">Utilities</option>
+                   <option value="Medicals">Medicals</option>
+                   <option value="Rent">Rent</option>
+                   <option value="Other">Others</option>
                 {categories.map((category) => (
-                    <option key={category} value={category}>
-                        {category}
-                    </option>
+                    <option key={category} value={category}></option>
                 ))}
             </select>
         </div>

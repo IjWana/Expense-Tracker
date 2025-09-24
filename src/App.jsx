@@ -90,9 +90,9 @@ function App() {
         <img
           src="/naira.png"
           alt="Logo"
-          className="inline-block w-20 h-20 mr-2"
+          className="inline-block w-20 h-20 mr-2 max-w-auto"
         />
-        [ Expenditure Tracker ]
+        [Expenditure Tracker]
       </h1>
       <div className="grid w-full max-w-3xl grid-cols-1 gap-10 p-6 bg-white rounded-lg shadow-lg md:grid-cols-2">
         <div>

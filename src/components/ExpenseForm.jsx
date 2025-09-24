@@ -127,7 +127,8 @@ function ExpenseForm({ onAddExpense, initialExpense, onUpdateExpense }) {
                         <option value="Transport">Transport</option>
                         <option value="Utilities">Utilities</option>
                         <option value="Medicals">Medicals</option>
-                        <option value="Other">Other</option>
+                        <option value="Rent">Rent</option>
+                       <option value="Other">Others</option>
                     </select>
                     {errors.category && <p className="mt-1 text-sm text-red-500">{errors.category}</p>}
                 </div>
