@@ -3,7 +3,7 @@ import ExpenseForm from "./components/ExpenseForm";
 import ExpenseList from "./components/ExpenseList";
 import ExpenseFilter from "./components/ExpenseFilter";
 
-// 1. Custom hook to handle expense-related state and logic
+// This is a Custom hook to handle expense-related state and logic
 const useExpenses = () => {
   const getInitialExpenses = () => {
     try {
@@ -94,7 +94,7 @@ function App() {
         />
         [ Expenditure Tracker ]
       </h1>
-      <div className="grid w-full max-w-3xl grid-cols-1 md:grid-cols-2 gap-10 p-6 bg-white rounded-lg shadow-lg">
+      <div className="grid w-full max-w-3xl grid-cols-1 gap-10 p-6 bg-white rounded-lg shadow-lg md:grid-cols-2">
         <div>
           <h2 className="mb-4 text-xl font-semibold text-gray-800">
             {editingExpense ? "Edit Expense" : "Add a New Expense"}
