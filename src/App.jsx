@@ -85,12 +85,12 @@ function App() {
   ).sort((a, b) => new Date(b.date) - new Date(a.date));
 
   return (
-    <div className="flex flex-col items-center min-h-screen py-8 bg-green-100">
-      <h1 className="mb-6 text-3xl font-bold text-gray-800">
+    <div className="flex flex-col items-center min-h-screen py-8 bg-green-100 bg-auto">
+      <h1 className="mb-6 text-2xl font-bold text-gray-800">
         <img
           src="/naira.png"
           alt="Logo"
-          className="inline-block w-20 h-20 mr-2 max-w-auto"
+          className="inline-block w-20 h-20 mr-2 max-w-100%"
         />
         [Expenditure Tracker]
       </h1>
